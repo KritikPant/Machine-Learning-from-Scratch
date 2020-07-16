@@ -20,7 +20,7 @@ class KNN:
         '''
         In this we want to calculate the distances of all of the points to find the K Nearest Neighbours
         Then we want to look at the labels of the K Nearest Neighbours
-        Finally we want to do a 'maturity vote' to choose the most common class label
+        Finally we want to do a 'maturity vote' to choose the most common class label (popularity vote)
         '''
         #Compute Distances
         distances = [euclidean_distance(x, x_train) for x_train in self.X_train]
