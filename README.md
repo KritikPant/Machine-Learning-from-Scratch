@@ -19,7 +19,23 @@ Linear Regression:
 
 - Since this is the error, we want to minimize this so we need to find the minimum of this function. To do this we need to find the derivative:
 <p align="center">
-  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/MSE_Derivative.png?raw=true" alt="MSE"/>
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/MSE_Derivative.png?raw=true" alt="MSE Derivative"/>
 </p>
 
-- This calculates the gradient of the cost function with respect to _*w*_ and respect to _*b*_
+- This calculates the gradient of the cost function with respect to _w_ and respect to _b_
+- Now we use gradient descent which is an iterative technique to find the minimum point:
+<p align="center">
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/GradientDescent.png?raw=true" alt="Gradient Descent"/>
+</p>
+
+- _"So we have some initialization of the weights and the bias and then we want to go into the direction of the steepest descent and the steepest descent is also the gradient so we want to go into the direction of the into the negative direction of the gradient and we do this iteratively until we finally reached the minimum"_
+- To do this iteratively, we need some update rules:
+<p align="center">
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/UpdateRules%2BDerivatives.png?raw=true" alt="Update rules and derivatives"/>
+</p>
+
+- The learning rate is a very important parameter as a small learning rate might be slower but more accurate but a large learning rate might be faster but at the same time never find the minimum point.
+
+<p align="center">
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/ComparisonOfLearningRates.png?raw=true" alt="Comparison of learning rates"/>
+</p>
