@@ -16,3 +16,10 @@ Linear Regression:
 <p align="center">
   <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/MSE.png?raw=true" alt="MSE"/>
 </p>
+
+- Since this is the error, we want to minimize this so we need to find the minimum of this function. To do this we need to find the derivative:
+<p align="center">
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/MSE_Derivative.png?raw=true" alt="MSE"/>
+</p>
+
+- This calculates the gradient of the cost function with respect to _*w*_ and respect to _*b*_
