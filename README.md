@@ -31,11 +31,34 @@ Linear Regression:
 - _"So we have some initialization of the weights and the bias and then we want to go into the direction of the steepest descent and the steepest descent is also the gradient so we want to go into the direction of the into the negative direction of the gradient and we do this iteratively until we finally reached the minimum"_
 - To do this iteratively, we need some update rules:
 <p align="center">
-  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/UpdateRules%2BDerivatives.png?raw=true" alt="Update rules and derivatives"/>
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/UpdateRules%2BDerivativesLinearRegression.png?raw=true" alt="Linear Reression - Update rules and derivatives"/>
 </p>
 
 - The learning rate is a very important parameter as a small learning rate might be slower but more accurate but a large learning rate might be faster but at the same time never find the minimum point.
 
 <p align="center">
   <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/ComparisonOfLearningRates.png?raw=true" alt="Comparison of learning rates"/>
+</p>
+
+Logistic Regression:
+- _"In statistics, the logistic model is used to model the probability of a certain class or event existing such as pass/fail, win/lose, alive/dead or healthy/sick. This can be extended to model several classes of events such as determining whether an image contains a cat, dog, lion, etc"_
+- In linear regression, we use the formula `f(w,b) = wx + b` which outputs continuous values. To change this into a probability, we use the sigmoid function:
+<p align="center">
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/Sigmoid.png?raw=true" alt="Sigmoid Function"/>
+</p>
+
+- The approximations are as follows due to applying the sigmoid function f(w,b) = wx + b (w = weights, b = bias):
+<p align="center">
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/LogisticRegressionApproximations.png?raw=true" alt="Logistic Regression Approximations"/>
+</p>
+
+- This will output a probability between 0 and 1
+- This is the cost function we use:
+<p align="center">
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/LogisticRegressionCostFunction.png?raw=true" alt="Logistic Regression + Cost Function"/>
+</p>
+
+- To optimize this formula, we use gradient descent again. These are the update rules and derivatives for the logistic regression algorithm:
+<p align="center">
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/UpdateRules%2BDerivativesLogisticRegression.png?raw=true" alt="Logistic Regression - Update rules + Derivatives"/>
 </p>
