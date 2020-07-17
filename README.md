@@ -35,7 +35,3 @@ Linear Regression:
 </p>
 
 - The learning rate is a very important parameter as a small learning rate might be slower but more accurate but a large learning rate might be faster but at the same time never find the minimum point.
-
-<p align="center">
-  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/ComparisonOfLearningRates.png?raw=true" alt="Comparison of learning rates"/>
-</p>
