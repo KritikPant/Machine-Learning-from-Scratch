@@ -62,3 +62,39 @@ Logistic Regression:
 <p align="center">
   <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/UpdateRules%2BDerivativesLogisticRegression.png?raw=true" alt="Logistic Regression - Update rules + Derivatives"/>
 </p>
+
+Naive Bayes Classifier
+
+- Based on the Bayes Theorem which states _If we have two events A and B then the probability of event A given that B has already happened is equal to the probability of B given that A has happened times the probability of A divided by the probability of B_:
+<p align="center">
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/BayesTheorem.png?raw=true" alt="Bayes Theorem"/>
+</p>
+
+- In our case, we use this like so:
+<p align="center">
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/UsageOfBayesTheorem.png?raw=true" alt="How we will use the bayes theorem"/>
+</p>
+
+- We then use the chain rule to get the following:
+<p align="center">
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/UsageOfBayesTheorem2.png?raw=true" alt="How we will use the bayes theorem"/>
+</p>
+
+- Terminology:
+  - P(y|X) is called the posterior probability 
+  - P(X|y) is called the class conditional probability
+  - P(y) is called the prior probability of Y
+  - P(X) is called the prior probability of X
+
+- It is called _Naive_ Bayes because it assumes that all features (factors contributing to overall probability) are mutually independent which is unlikely in the real world
+- _"For example if you want to predict the probability that a person is going out for a run given the feature that the sun is shining and also given the feature that the person is healthy, then both of these features might be independent but both contribute to this probability that the person goes out. In real life a lot of features are not mutually independent but this assumption works fine for a lot of problems"_
+- We then have to select the class with the highest probability. We can therefore use the first formula given below. However, since we are only interested in y, we can ignore P(X). We then must use logarithms to get to the third formula provided below. We do this as all the probabilities will be between 0 and 1 so the final calculation will result in a very small number which could lead to overflow errors.
+<p align="center">
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/BayesSelectClass.png?raw=true" alt="How to select the class with the highest probability"/>
+</p>
+
+- In the end, P(y) = frequency
+- The class conditional probability is calculated as follows:
+<p align="center">
+  <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/BayesClassConditionalP.png?raw=true" alt="Class Conditional Probability Calculation"/>
+</p>
