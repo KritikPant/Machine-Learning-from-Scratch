@@ -98,3 +98,10 @@ Naive Bayes Classifier
 <p align="center">
   <img src="https://github.com/KritikPant/Machine-Learning-from-Scratch/blob/master/Images/BayesClassConditionalP.png?raw=true" alt="Class Conditional Probability Calculation"/>
 </p>
+
+Perceptron
+
+- The perceptron can be seen as one single unit of an artificial neural network 
+- It is a simplified model of a biological neuron and it simulates the behavior of only one cell
+- Inputs (weighted and summed) -> Activation function -> output
+- In this code, we will be using step function as our activation function.
